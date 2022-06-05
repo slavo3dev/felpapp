@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
-import { Footer, QuestionInput} from "@components"
+import { Footer, QuestionInput, Header} from "@components"
 
 const Home: NextPage = () => {
   return (
-    <div className="container bg-yellow-100 text-gray-800 px-8 py-12 w-full">
-      <h1>Home Page</h1>
+    <div className="bg-blue-500 text-gray-100 px-8 py-12">
+      <Header />
       <QuestionInput />
       <Footer />
     </div>
