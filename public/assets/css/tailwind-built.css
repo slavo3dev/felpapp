@@ -523,6 +523,10 @@ video {
 		max-width: 1200px;
 	}
 }
+.py-15pc{
+	padding-top:15%;
+	padding-bottom: 10%;
+}
 .drop-down-menu{
 	visibility: hidden;
 	position: absolute;
@@ -1664,6 +1668,9 @@ video {
 }
 .opacity-25{
 	opacity: 0.25 !important;
+}
+.opacity-90{
+	opacity: 0.9 !important;
 }
 .shadow{
 	--tw-shadow: 0px 2px 4px rgba(148, 163, 184, 0.05), 0px 6px 24px rgba(235, 238, 251, 0.4) !important;
