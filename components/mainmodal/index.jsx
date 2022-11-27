@@ -7,10 +7,11 @@ export const MainModal = (props) => {
   const [state, setState] = useState("idle");
   const [errorMsg, setErrorMsg] = useState(null);
 
-  function closeSelf(f) {
-    f.submit();
-    MainModal.close();
-  }
+  // function CloseAndRefresh() 
+  // {
+  //    self.close();
+  // };
+
   const handleSubscribe = async (e) => {
     e.preventDefault();
     setState("Loading");
@@ -21,6 +22,8 @@ export const MainModal = (props) => {
         setState("idle");
       }, 2000);
       setEmail("");
+     
+
     } catch (e) {
       setErrorMsg(e.response.data.detail);
       setState("Error");
